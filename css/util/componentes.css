@@ -8,10 +8,31 @@
   color: #332200;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.seta {
+  display: flex;
+  align-items: center;
+}
+.btn.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.btn.seta:hover::after {
+  transform: translateX(4px);
+  transition: transform 0.2s;
 }
 
 .btn.secundario {
@@ -46,4 +67,29 @@
 
 .btn-2:hover {
   color: var(--cor-0);
+}
+
+/* Titulos páginas internas */
+
+.titulo-bg {
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
