@@ -114,11 +114,6 @@
   display: none;
 }
 
-.orcamento-conteudo h2,
-.orcamento-dados h2:nth-of-type(n + 2) {
-  margin-bottom: 20px;
-}
-
 #bikcraft:checked ~ #orcamento-bikcraft,
 #seguro:checked ~ #orcamento-seguro {
   display: grid;
