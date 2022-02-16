@@ -1,3 +1,17 @@
+// Menu Fixo
+
+window.onscroll = function () {
+  const menu = document.querySelector(".header-bg");
+  const logo = document.querySelector("header img");
+  var top = window.pageYOffset || document.documentElement.scrollTop;
+  if (top > 200) {
+    menu.classList.add("fixo"),
+      logo.setAttribute("src", "./img/bikcraft-2.svg");
+  } else if (top < 200)
+    menu.classList.remove("fixo"),
+      logo.setAttribute("src", "./img/bikcraft.svg");
+};
+
 // Ativar links do menu
 
 const links = document.querySelectorAll(".header-menu a");

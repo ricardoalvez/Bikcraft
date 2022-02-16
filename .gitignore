@@ -1,2 +1,2 @@
-/old js
-/.vscode
+*.php
+.vscode
